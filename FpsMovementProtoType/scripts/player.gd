@@ -18,6 +18,7 @@ const walkSpeed = 5.0
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 const Sensitivity = 0.004
+const crouchingSpeed = 3.0
 
 # onready variables
 
@@ -58,6 +59,7 @@ func _physics_process(delta):
 		speed = sprint_Speed
 	else:
 		speed = walkSpeed
+	
 	
 	# Add the gravity.
 	if not is_on_floor():

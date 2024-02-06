@@ -1,10 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://c5oqujiqixb3p"]
+[gd_scene load_steps=14 format=3 uid="uid://c5oqujiqixb3p"]
 
 [ext_resource type="Texture2D" uid="uid://dgbdsguntt1ub" path="res://PNG/Dark/texture_01.png" id="1_82cdw"]
 [ext_resource type="Texture2D" uid="uid://b7jyj6ic1gxcp" path="res://PNG/Orange/texture_05.png" id="2_me347"]
 [ext_resource type="Texture2D" uid="uid://b71p0ylq514ex" path="res://PNG/Green/texture_13.png" id="3_5rwny"]
 [ext_resource type="PackedScene" uid="uid://dfnguwr7jtw6q" path="res://scenes/player.tscn" id="3_ksaem"]
 [ext_resource type="Texture2D" uid="uid://wfhqyii3xcf3" path="res://PNG/Light/texture_06.png" id="4_vmsay"]
+[ext_resource type="PackedScene" uid="uid://c4t5b24iupa2n" path="res://scenes/Ui.tscn" id="6_kwprr"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_854rh"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -79,3 +80,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.378377, 11.017)
 
 [node name="Player" parent="Player" instance=ExtResource("3_ksaem")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.50202, 1.84444)
+
+[node name="Control" parent="." instance=ExtResource("6_kwprr")]
